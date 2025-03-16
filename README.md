@@ -51,9 +51,9 @@ This will generate optimized static assets in the `dist` folder.
 
 ## **Video Demonstration**
 ### **1. API Response in React App**
-![React API Demo]("https://drive.google.com/file/d/11bO8QFE2kzLY_wZxqTH4WRX1yanKOodU/view?usp=sharing")
+![React API Demo](./public/assets/api%20demonstration.mp4)
 
 ### **2. API Response in Postman**
-![Postman API Demo]("https://drive.google.com/file/d/1sbVWE4cRPasvCkWa5znv3EJL7j11814W/view?usp=sharing")
+![Postman API Demo](./public/assets/postman%20demonstration.mp4)
 
 ---
