@@ -1,4 +1,4 @@
-# **EZ Landing Page**
+# **ReactJS Single Page Application**
 
 This project is a single-page web application built using **Vite with ReactJS**, designed to be fully responsive across different devices. The application consists of a **simple form integrated with an API**, following the given requirements.
 
@@ -49,11 +49,4 @@ npm run build
 ```
 This will generate optimized static assets in the `dist` folder.
 
-## **Video Demonstration**
-### **1. API Response in React App**
-![React API Demo](https://drive.google.com/file/d/11bO8QFE2kzLY_wZxqTH4WRX1yanKOodU/view?usp=sharing)
 
-### **2. API Response in Postman**
-![Postman API Demo](https://drive.google.com/file/d/1sbVWE4cRPasvCkWa5znv3EJL7j11814W/view?usp=sharing)
-
----
