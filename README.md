@@ -1,4 +1,4 @@
-# **ReactJS Single Page Application**
+# **EZ Landing Page**
 
 This project is a single-page web application built using **Vite with ReactJS**, designed to be fully responsive across different devices. The application consists of a **simple form integrated with an API**, following the given requirements.
 
