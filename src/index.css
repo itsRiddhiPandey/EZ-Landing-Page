@@ -1,0 +1,291 @@
+/* Base CSS */
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #112949;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+.teaser {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teaser .cmp-teaser {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #112949;
+  color: white;
+}
+
+.teaser .cmp-teaser h2 {
+  font-size: 1.25rem;
+  color: #3CC3F2;
+  font-weight: normal;
+}
+
+.teasers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.teaser .cmp-teaser__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: start;
+}
+
+.teaser .cmp-teaser__head img {
+  width: 60px;
+}
+
+.teaser .cmp-teaser__head h2 {
+  width: calc(100% - 80px);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  margin: 10px 0px 10px 0px;
+}
+
+form>div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: calc(100% - 140px);
+}
+
+form input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ABABAB;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: #EA7B2C;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.appRoot {
+  display: grid;
+  grid-template-columns: 40% 58%;
+  gap: 2%;
+  padding: 0 20px;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Responsive Design */
+
+/* Mobile View (480px) */
+@media (max-width: 480px) {
+
+  .left-container {
+    text-align: center;
+  }
+
+  body {
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  .teasers-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 200px;
+
+    align-items: center;
+  }
+
+  .appRoot {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  form {
+    position: relative;
+    bottom: 0px;
+    flex-direction: column;
+    margin: 10px;
+    gap: 15px;
+
+  }
+
+  form>div {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .teaser .cmp-teaser {
+    padding: 1rem;
+    margin-bottom: 10px;
+    ;
+  }
+
+  .teaser .cmp-teaser__head img {
+    width: 40px;
+  }
+}
+
+/* 720p (min-width: 481px and max-width: 720px) */
+@media (min-width: 481px) and (max-width: 720px) {
+
+  .left-container {
+    text-align: center;
+  }
+
+  body {
+    margin: 10px;
+  }
+
+  .appRoot {
+    grid-template-columns: 1fr;
+  }
+
+  .logo img {
+    width: 350px;
+  }
+
+  form {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .teasers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    ;
+  }
+}
+
+/* 1080p (max-width: 1080px) */
+@media (min-width:721px) and (max-width: 1080px) {
+
+  body {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .left-container {
+    text-align: center;
+  }
+
+  .logo img {
+    width: 400px;
+  }
+
+  .appRoot {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+/* iPad (2732x2048) */
+@media (min-width: 2732px) and (min-height: 2048px) {
+
+  body {
+    margin: 20px 20px;
+  }
+
+  .appRoot {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .teasers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+  }
+
+  .left-container img {
+    width: 1000px;
+  }
+
+  form {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .appRoot {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cmp-teaser {
+    font-size: 50px;
+  }
+
+  .teaser .cmp-teaser__head img {
+    width: 100px;
+  }
+
+  .teaser .cmp-teaser__head h2 {
+    font-size: 50px;
+  }
+
+  .left-container h2 {
+    font-size: 50px;
+  }
+
+  .left-container p {
+    font-size: 50px;
+  }
+}
